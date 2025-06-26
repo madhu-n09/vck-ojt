@@ -1,0 +1,172 @@
+
+.column{
+  float: left;
+  width:45%;
+  padding: 10px;
+  border-radius:50%;
+}
+
+.row {
+  content: "";
+  clear: both;
+  display: table;
+  gap:20px;
+}
+.style{
+  text-align:center;
+  color:black;
+
+}
+
+.container{
+  max-height:100%;
+  background-color:#09dcd1 ;
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  width:100vw;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  height:400;
+  margin-bottom: 2.5rem;
+
+}
+ .header {
+  background: color #03a9f4;;
+  color: white;
+  max-width:900px;
+  padding: 1rem 2rem ;
+  justify-content:space-between;
+  margin-right:3.1rem;
+  
+  
+}
+
+.card {
+  background-color: white;
+  max-width:950px;
+  max-height: 400px;
+  overflow:scroll;
+  width:100%;
+  margin:0;
+  padding:25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+ 
+
+
+}
+
+.card1{
+    color:black;
+
+}
+
+.chatbot1{ 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 3px solid black;
+}
+
+.page{
+
+  text-align: center;
+}
+.btn1{
+  background-color: #4CAF50;
+  color: white;
+  padding:12px 24px ;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: 10px;
+
+}
+.border1{
+   border:"1";
+
+}
+.centerText1{
+  text-align: center;
+  color:blue;
+}
+.centerText{
+  position:absolute;
+  top:24%;
+  left: 0.6%;
+  padding:40px;
+  font-weight:bold;
+  text-align: center;
+  width:90%;
+}
+
+/* Background banner with image */
+.banner {
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:350px;
+  width: 890px;;
+  filter:blur(2px);
+
+
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Apply Now Button */
+.apply-button {
+  display: inline-block;
+  background-color: #28a745;
+  color: white;
+  padding: 12px ;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  justify-content:center;
+  
+}
+
+.apply-button:hover {
+  background-color: #218838;
+}
+.but2{
+  display:inline-flex;
+  background-color: #28a745;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-left: 23rem;
+  padding: 10px;
+}
+.scroll{
+  height:400px;
+  overflow:scroll;
+  padding: 15px 20px;
+  background-color:#f9f9f9;
+  border-radius:10px;
+  line-height: 1.6;
+  margin:20px auto;
+  color:#333;
+
+}
+.center-text{
+  position: static;
+
+}

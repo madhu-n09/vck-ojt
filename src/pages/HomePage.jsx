@@ -6,6 +6,7 @@ const HomePage = () => {
         <Header/>
         <div class="header">
         <div class="card">
+          <div class="cen1">
             <img src="/images/BCS.png" class="banner"/>
             <div class="center-text">
          <h1 class="centerText">
@@ -14,6 +15,7 @@ const HomePage = () => {
        <h5 class="subtitle">Your journey to excellence starts here.</h5>
        <a class="apply-button" href="/addmission">Apply Now</a>
        </h1>
+       </div>
        </div>
         <p class="card1"><strong>Vivekanand College</strong> is a premier educational institution dedicated to fostering academic excellence, innovation, and holistic development. Established in [Year of Establishment, e.g., 1980], we have proudly served generations of students, empowering them to achieve their full potential.
         </p>

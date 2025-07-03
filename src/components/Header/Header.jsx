@@ -1,23 +1,34 @@
 import {Link} from 'react-router-dom';
-import './Header.css';
-const Header = () => {
-    return(
-    <div>
-        <header class="navbar-1">
-            <nav class="navbar">
-                <h3 class="centered"to="/vck">Vivekanand College</h3>
-                <div class="navbar">
-                <Link class="left" to="/home">Home</Link>
-                <Link class="left" to="/about">About</Link>
-                <Link class="left" to="/courses">Courses</Link>
-                <Link class="left" to="/contact">Contact</Link>
-                <Link to="/addmission">
-                <button class="btn-hm">Apply Now!</button>
+import "./Header.css";
+import { useState } from 'react';
+const Header =() => {
+    
+    const [isOpen, setIsOpen] = useState(false);
+
+    return (
+        <header className="navbar-1">
+            <nav className="navbar">
+                <Link to="/vck">
+                    <h1 className="centered">Vivekanand College</h1>
                 </Link>
+
+                <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+                   {isOpen ?'x': '☰'}
+                </button>
+
+                <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+                    <Link className="left" to="/home">Home</Link>
+                    <Link className="left" to="/about">About</Link>
+                    <Link className="left" to="/courses">Courses</Link>
+                    <Link className="left" to="/contact">Contact</Link>
+                    <Link to="/admission">
+                        <button className="btn-hm">Apply Now!</button>
+                    </Link>
                 </div>
             </nav>
         </header>
-    </div>
-    )
-}
+    );
+};
+
 export default Header;
+

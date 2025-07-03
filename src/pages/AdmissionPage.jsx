@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 
-const AddmissionPage = () => {
+const AdmissionPage = () => {
   return(
     <div class="container">
       <Header/>
@@ -56,4 +56,4 @@ const AddmissionPage = () => {
 
   )
 }
-  export default AddmissionPage;
+  export default AdmissionPage;

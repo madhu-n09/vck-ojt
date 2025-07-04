@@ -315,10 +315,8 @@ body{
   }
 
   .card {
-    font-size: 1.8em;
+    font-size: 1em;
+    width:auto;
   }
 
-  .centered {
-    font-size: 0.9em;
-  }
 }

@@ -306,3 +306,19 @@ body{
 .textt{
     text-decoration:underline;
 }
+
+@media (max-width: 480px) {
+
+  /* Further adjustments for very small screens (phones) */
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    font-size: 1.8em;
+  }
+
+  .centered {
+    font-size: 0.9em;
+  }
+}

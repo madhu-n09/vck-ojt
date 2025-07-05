@@ -1,344 +1,343 @@
-.column{
-  float: left;
-  width:45%;
-  padding: 8px;
-  border-radius:50%;
+/* src/pages/pages.css  */
+.page-container {
+  max-width: 960px;
+  /* Max width for content to prevent it from stretching too wide */
+  height: 440px;
+  margin: 20px auto;
+  /* Center the content with some top/bottom margin */
+  padding: 20px;
+  background-color: #FFFFFF;
+  /* White background for page content */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  /* Subtle shadow */
 }
 
-.row {
-  content: "";
-  clear: both;
-  display: table;
-  gap:20px;
-}
-.style{
-  text-align:center;
-  color:black;
-
-}
-
-.container{
-  max-height:100%;
-  background-color:#09dcd1 ;
-  font-family:Arial, Helvetica, sans-serif;
-  margin:1px;
-  width:87%;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  height:600px;;
-  margin-bottom: 2.5rem;
-  position:relative;
-
-}
- .header {
-  background: color #03a9f4;;
-  max-width:980px;
-  padding: 1rem 2rem;
-  justify-content:space-between;
-  margin-left:3.7rem;
-  position:sticky;
-  
-  
-}
-
-.card {
-  background-color: white;
-  max-width:900px;
-  max-height: 400px;
-  overflow:scroll;
-  width:90%;
-  margin-right:300px;
-  margin-left:-5%;
-  padding:25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.5;
-  overflow-x: hidden;
-
-}
-
-.card1{
-    color:black;
-
-}
-
-.chatbot1{ 
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  border: 3px solid black;
-}
-
-.page{
-
+.page-container h1 {
+  color: black;
+  /* Primary blue for headings */
   text-align: center;
-}
-.btn1{
-  background-color: #4CAF50;
-  color: white;
-  padding:12px 24px ;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  box-sizing: 10px;
-
-}
-.border1{
-   border:"1";
-
-}
-.centerText1{
-  text-align: center;
-  color:blue;
-
-}
-.centerText{
-  position:absolute;
-  top:1%;
-  left:0.5%;
-  padding:40px;
-  font-weight:bold;
-  text-align: center;
-  width:90%;
-  color:white;
+  margin-bottom: 25px;
+  font-size: 2.5em;
 }
 
-/* Background banner with image */
-.banner {
-  background-size:cover;
-  background-position: center;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height:350px;
-  width:900px;;
-    filter: brightness(60%);
-  /* Darken image for text readability */
-
+.page-container h2 {
+  color: #343A40;
+  /* Darker grey for subheadings */
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  border-bottom: 1px solid #eee;
+  /* Light line under subheadings */
+  padding-bottom: 10px;
 }
 
-/* Subtitle */
-.subtitle {
-  font-size: 1.5rem;
-  color: white;
+.page-container p {
+  line-height: 1.6;
+  color: #555;
   margin-bottom: 15px;
 }
 
-/* Apply Now Button */
-.apply-button {
-  display: inline-block;
-  background-color: #28a745;
-  color: white;
-  padding: 12px ;
-  font-size: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  justify-content:center;
-  
+.page-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #555;
 }
 
-.apply-button:hover {
+.page-container li {
+  margin-bottom: 8px;
+}
+
+.call-to-action {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.call-to-action .btn {
+  display: inline-block;
+  background-color: #28A745;
+  /* Green button */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action .btn:hover {
   background-color: #218838;
 }
-.but2{
-  display:inline-flex;
-  background-color: #28a745;
-  color: white;
-  font-size: 1rem;
+
+
+/* HomePage Specific Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  /* Adjust as needed */
+  overflow: hidden;
+  margin-bottom: 40px;
   border-radius: 8px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  margin-left: 22rem;
+  /* Match page-container */
+}
+
+.hero-banner-image {
+  width: 100%;
+  height:100%;
+  object-fit: fill;
+  /* Cover the area, cropping if necessary */
+  filter: brightness(60%);
+  /* Darken image for text readability */
+}
+
+.hero-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 90%;
+  /* Ensure text doesn't hit edges */
+}
+
+.hero-overlay-text h1 {
+  color: white;
+  /* Override blue from .page-container h1 */
+  font-size: 3.5em;
+  /* Larger heading for banner */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Add shadow for readability */
+}
+
+.hero-overlay-text p {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+  background-color: #28A745;
+  /* Green button for Apply Now */
+  font-size: 1.2em;
+  padding: 15px 30px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 200px;
+  /* Fixed height for consistency */
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* Smooth hover effect */
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+  /* Slightly enlarge on hover */
+}
+
+/* Table Styles for Admissions Page */
+.admissions-table {
+  width: 100%;
+  border-collapse: collapse;
+  /* Collapse borders between cells */
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #F8F9FA;
+  /* Light background for table */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  /* Subtle shadow */
+}
+
+.admissions-table th,
+.admissions-table td {
+  border: 1px solid #DEE2E6;
+  /* Light grey borders */
+  padding: 12px;
+  text-align: left;
+  font-size: 0.95em;
+}
+
+.admissions-table th {
+  background-color: #E9ECEF;
+  /* Slightly darker background for headers */
+  font-weight: bold;
+  color: #343A40;
+}
+
+.admissions-table tbody tr:nth-child(even) {
+  background-color: #F2F2F2;
+  /* Zebra striping for rows */
+}
+
+.admissions-table tbody tr:hover {
+  background-color: #E2F0FF;
+  /* Highlight row on hover */
+}
+
+/* Styles for ordered list */
+.page-container ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  list-style-type: decimal;
+  color: #555;
+}
+
+.page-container ol li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+
+/* Video Section Styles */
+.video-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #000;
+  /* Black background for video */
+  border-radius: 8px;
+  overflow: hidden;
+  /* Ensures video corners are rounded */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-video {
+  display: block;
+  /* Remove extra space below video */
+  max-width: 100%;
+  /* Ensure it's responsive */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+.video-caption {
+  text-align: center;
   padding: 10px;
-}
-.scroll{
-  height:400px;
-  overflow:scroll;
-  padding: 15px 20px;
-  background-color:#f9f9f9;
-  border-radius:10px;
-  line-height: 1.6;
-  margin:20px auto;
-  color:#333;
-
-}
-.center-text{
-  position: static;
-  margin-left: 10px;
-
+  color: #777;
+  font-style: italic;
+  background-color: #F0F0F0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
-.main-1{
-  position:sticky;
 
-}
-body{
-  overflow-y: hidden;
-  margin:0;
-  padding:0;
-  height:100vh;
-  width:100vw;
-  position: fixed;
 
-}
-.cen1{
-  position:relative;
+/* CSS Animation Definitions */
+/* Keyframes for Fade In Up animation */
+@keyframes fadeInUptoBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start 20px below its final position */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* End at its original position */
+  }
 }
 
-.cardsize{
-  background-color: white;
-  max-width:10px;
-  max-height:400px;
-  overflow:scroll;
-  width:50%;
-  margin:0;
-  padding:15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.6;
-  overflow-x: hidden;
-  margin-left: -15%;
- 
+/* Apply animation to elements with this class */
+.animate-fade-in-up {
+  animation: fadeInUptoBottom 1s ease-out forwards;
+  /* 1s duration, smooth ease-out, stays at end state */
+  /* You might want to add animation-delay if multiple elements animate in sequence */
 }
+
+
+
 /* --- Basic Responsive Styles --- */
 @media (max-width: 768px) {
-  .container{
+  .page-container {
+    margin: 15px auto;
     /* Slightly less margin on smaller screens */
-    padding: 14px;
+    padding: 15px;
     /* Slightly less padding */
-    margin-left:20px;
-    height:-20px;
-    margin:0px;
   }
 
-  /*  */
-  .header{
-    height: 280px;
+  /* Home Page - Hero Section */
+  .hero-section {
+    height: 250px;
     /* Shorter banner on smaller screens */
-    width:38%;
-    margin-left: 50px;
   }
 
-  .centerText {
-    font-size: 1.5em;
+  .hero-overlay-text h1 {
+    font-size: 2.2em;
     /* Smaller heading */
-    left:-11px;
-    top:5%;
-
   }
 
-  .centerText1 {
-    font-size: 1rem;
+  .hero-overlay-text p {
+    font-size: 1em;
     /* Smaller paragraph */
-
   }
 
-  .btn2 {
-    padding:20px;
-    margin-left:2rem;
-    align-self: center;
-    margin-top:5em;
+  .hero-btn {
+    padding: 10px 20px;
+    /* Smaller button */
+    font-size: 1em;
   }
-  .banner {
-    height: 270px;
+
+  /* Image Gallery */
+  .image-gallery {
+    grid-template-columns: 1fr;
+    /* Stack images in a single column */
+  }
+
+  .image-gallery img {
+    height: 180px;
     /* Adjust height for stacked images */
-    width:400px;
-    padding-right:30%;
-    padding-left:-20%;
-    padding:30px;
-    margin-top:-11px;
-    margin-left:-12px;
-    margin-right:9px;
-    
-    
   }
 
-  .card{
-   padding-left :-500px;
-   align-content:center;
-   margin-left: -417px;
-   margin-right: -60px;
-   padding-right:15px;
-   padding:0px;
-   height:500px;
-   margin-top: -10px;
-  
+  /* Admissions Table */
+  /* .admissions-table, .course-details-table {
+    display: block; /* Make table block level */
+  /* overflow-x: auto; Enable horizontal scroll for table on small screens */
+  /* white-space: nowrap; Prevent content from wrapping inside cells */
+  /* -webkit-overflow-scrolling: touch; For smooth scrolling on iOS */
+  /* } */
+  */ .admissions-table thead,
+  .admissions-table tbody,
+  .admissions-table th,
+  .admissions-table td,
+  .admissions-table tr {
+    display: block;
+    /* Make table elements stack */
+    width: auto;
+    /* Allow natural width */
   }
-.navbar {
-  position:fixed;
-  top: 0px;
-  left:-1px;
-  width:85%;
-  background-color: #00aaff; /* ya jo bhi aapka blue color hai */
-  z-index:1000;
-  margin-left:1px;
-  margin-top: 1px;
-  margin-right: 2px;
-  padding-right:60px;
-} 
 
-.navbar-1{
-     margin-left:59px;
-
-}
-
-.column{
-  width:170px;
-}
-.but2{
-  margin-left:9rem;
-  padding: 5px;
-
-}
-.card1{
-  margin-left: 1em;
-  margin-top: 1px;
-}
-
-}
-
-.textt{
-    text-decoration:underline;
 }
 
 @media (max-width: 480px) {
 
   /* Further adjustments for very small screens (phones) */
-  .container {
+  .page-container {
     padding: 10px;
   }
 
-  .card {
-    font-size: 1em;
-    width:100%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-
-  }
-  .banner{
-    width:100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  .apply-button{
-    padding: 10px 16px;
-    font-size: 14px;
-   margin-top: 10px;
+  .hero-overlay-text h1 {
+    font-size: 1.8em;
   }
 
-}
-body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  .hero-overlay-text p {
+    font-size: 0.9em;
+  }
 }

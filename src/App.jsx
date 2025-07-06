@@ -12,6 +12,7 @@ import DeveloperInfoPopup from "./components/DeveloperInfo/DeveloperInfoPopup";
 import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import ContactPage from "./pages/ContactPage";
+import "./App.css";
 
 function App() {
   const [showPopup, setShowPopup] = useState(true);

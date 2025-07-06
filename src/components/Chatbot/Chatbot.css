@@ -250,7 +250,7 @@
   color: white;
   border: none;
   border-radius: 50%; /* Make it round */
-  width: 20px; /* Size of the button */
+  width: 25px; /* Size of the button */
   height: 25px; /* Size of the button */
   font-size: 1em;
   display: flex;

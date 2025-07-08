@@ -18,8 +18,8 @@ import "./App.css";
 function App() {
 const [showPopup, setShowPopup] = useState(true);
 const handleClosePopup = () => {
-setShowPopup(false);
-} 
+setShowPopup(false)
+};
 return (
 <div>
 <div>

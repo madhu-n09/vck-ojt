@@ -17,7 +17,7 @@ function DeveloperInfoPopup({ show, onClose, studentName, studentPhotoUrl, uniqu
     </div>
   );
 }
-export default DeveloperInfoPopup;
+export default DeveloperInfoPopup ;
 
 
 

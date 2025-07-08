@@ -390,4 +390,4 @@ const ChatbotComponent = () => {
 };
 
 // 86. Export the component for use in other parts of the application.
-export default ChatbotComponent;
+export default ChatbotComponent ;

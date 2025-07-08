@@ -1,5 +1,4 @@
 // src/pages/CoursesPage.jsx
-
 import { Link } from 'react-router-dom';
 
 const CoursesPage = () => {

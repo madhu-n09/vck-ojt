@@ -1,5 +1,6 @@
 // src/pages/AdmissionsPage.jsx
 import { Link } from "react-router-dom";
+
 const AdmissionsPage = () => {
   return (
     <div className="page-container" style={{ overflow: "auto" }}>

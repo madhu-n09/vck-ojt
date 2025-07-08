@@ -1,4 +1,5 @@
 // src/pages/AboutPage.jsx
+
 const AboutPage = () => {
   return (
     <div className="page-container" style={{overflow:"auto"}}>

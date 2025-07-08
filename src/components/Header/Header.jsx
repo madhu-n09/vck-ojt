@@ -7,6 +7,7 @@ function Header() {
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
+  
   // Function to close drawer when a link is clicked
   const closeDrawer = () => {
     setIsDrawerOpen(false);
